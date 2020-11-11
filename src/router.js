@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from './views/Login'
 import Welcome from './views/Welcome'
+import Dashboard from './views/Dashboard'
 import UserInfo from './views/UserInfo'
 
 Vue.use(VueRouter)
@@ -9,6 +10,11 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+  {
+    path: '/welcome',
     name: 'Welcome',
     component: Welcome
   },

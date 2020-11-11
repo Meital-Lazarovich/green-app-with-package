@@ -29,6 +29,6 @@ export default new Vuex.Store({
     async logout(context) {
       await userService.logout()
       context.commit({ type: 'setUser', user: null })
-    },
+    }
   }
 })

@@ -25,7 +25,6 @@
             </div>
             <div class="actions">
                 <div class="btns flex">
-                    <!-- <button type="submit" class="submit-btn">כניסה</button> -->
                     <MPButton class="submit-btn" type="rounded">
                         כניסה
                     </MPButton>
@@ -44,7 +43,6 @@
 </template>
 
 <script>
-import MeitalsPackage from 'meitals-package';
 
 export default {
     mounted() {
@@ -61,9 +59,6 @@ export default {
             const { email, password } = this
             this.$emit('login', { email, password })
         },
-    },
-    components: {
-        ...MeitalsPackage
     }
 }
 </script>
