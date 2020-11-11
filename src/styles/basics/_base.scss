@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: almoni-neue-dl;
+  color: $clr1;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  padding: 0;
+}
+
+// general settings to make it easier to style
+// a larger-scale app
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+input, textarea, select {
+  color: inherit;
+  font-family: inherit;
+  outline: none;
+}

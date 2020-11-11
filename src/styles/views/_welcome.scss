@@ -1,0 +1,66 @@
+.welcome {
+    @include basic-padding;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    img {
+        width: 100%;
+        object-fit: contain;
+        padding-right: 10px;
+    }
+    h2 {
+        font-size: rem(40px);
+        margin-bottom: rem(40px);
+    }
+    h3 {
+        font-size: rem(25px);
+        margin-bottom: rem(80px);
+        span {
+            font-weight: normal;
+            margin-left: rem(7px);
+        }
+    }
+    div {
+        a {
+            text-decoration: none;
+            @include action-btn;
+            margin-left: rem(20px);
+        }
+        button {
+            @include basic-btn;
+            &:hover {
+                background-color: #e6e6e6;
+            }
+        }
+    }
+    @media (max-width: $break-med) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        h3 {
+            justify-content: center;
+        }
+        img {
+            display: none;
+        }
+        div {
+            justify-content: center
+        }
+    }
+    @media (max-width: $break-narrow) {
+        div {
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            height: rem(125px);
+            a,
+            button {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

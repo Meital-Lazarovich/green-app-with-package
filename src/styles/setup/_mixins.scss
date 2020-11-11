@@ -1,0 +1,32 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// fixed settings to make it easier to style
+// a larger-scale app
+
+@mixin basic-btn {
+    @include flex-center;
+    font-weight: bold;
+    font-size: rem(16px);
+    border-radius: rem(100px);
+    height: rem(56px);
+    width: rem(100px);
+    transition: backgroundColor, 0.3s;
+}
+
+@mixin action-btn {
+    @include basic-btn;
+    width: rem(228px);
+    background-color: $clr3;
+    color: $clr4;
+    &:hover {
+        background-color: darken($clr3, 5%);
+    }
+}
+
+@mixin basic-padding {
+    padding: rem(40px) rem(90px);
+}

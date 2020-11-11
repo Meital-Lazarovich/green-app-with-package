@@ -1,0 +1,14 @@
+.header {
+    padding: rem(38px) rem(86px);
+    img {
+        height: rem(34px)
+    }
+    &:not(.blended) {
+        box-shadow: 0 0 7px rgba(0, 0, 0, .4);
+        padding: rem(20px) rem(86px);
+        position: sticky;
+    }
+    @media (max-width: $break-med) {
+        padding: rem(38px) rem(25px);
+    }
+}

@@ -1,0 +1,7 @@
+// For accessibility purpose, all the sizes and spacing are in REM - 
+// based on the font-size of the root HTML element. 
+// It also makes it easier to scale the entire app by changing the root font-size
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return ($remSize) * 1rem;
+}
