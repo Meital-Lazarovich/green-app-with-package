@@ -1,5 +1,5 @@
 <template>
-    <section class="welcome grid" v-if="user">
+    <section v-if="user" class="welcome grid">
         <content>
             <h2>היי {{ user.firstName }},</h2>
             <h3 class="flex wrap bold">

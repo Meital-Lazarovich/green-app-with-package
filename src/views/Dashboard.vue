@@ -2,9 +2,9 @@
     <section class="dashboard">
         <h2>סיכום נתונים לתקופה</h2>
         <div class="date-inputs flex space-between align-center wrap">
-            <input @change="loadData" type="date" v-model="startDate" />
+            <input v-model="startDate" type="date" @change="loadData" />
             עד
-            <input @change="loadData" type="date" v-model="endDate" />
+            <input v-model="endDate" type="date" @change="loadData" />
         </div>
         <div class="graphs flex wrap space-between">
             <div class="flex column align-center">

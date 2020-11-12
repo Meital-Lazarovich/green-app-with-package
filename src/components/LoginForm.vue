@@ -4,12 +4,12 @@
         <form @submit.prevent="login">
             <div>
                 <input
+                    ref="email"
                     v-model="email"
                     required
                     type="email"
                     name="email"
                     placeholder="מייל"
-                    ref="email"
                 />
                 <p>כתובת המייל איתה נרשמת לחשבונית ירוקה</p>
             </div>

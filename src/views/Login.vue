@@ -3,7 +3,7 @@
         <div class="login-background"></div>
         <LoginForm @login="login" />
         <LoginHero />
-        <div class="login-err" v-if="isActiveErr">מייל או סיסמה לא נכונים</div>
+        <div v-if="isActiveErr" class="login-err">מייל או סיסמה לא נכונים</div>
     </section>
 </template>
 

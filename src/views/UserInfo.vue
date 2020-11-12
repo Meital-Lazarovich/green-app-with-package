@@ -1,13 +1,13 @@
 <template>
     <section class="user-info" v-if="user">
-        <img @click="logout" class="logout pointer" src="../assets/imgs/logout.png" alt="יציאה" title="יציאה">
+        <img class="logout pointer" src="../assets/imgs/logout.png" alt="יציאה" title="יציאה" @click="logout">
         <div class="user grid">
             <div v-for="(section, idx) in userInfoToShow" :key="idx">
                 <h2>{{ section.title }}</h2>
                 <div
-                    class="data"
                     v-for="(dataField, idx) in section.dataFields"
                     :key="idx"
+                    class="data"
                 >
                     <p class="field">{{ dataField.field }}</p>
                     <p>{{ dataField.value }}</p>
@@ -17,9 +17,9 @@
         <div class="businesses">
             <h2>עסקים</h2>
             <div
-                class="business grid"
                 v-for="business in businessesToShow"
                 :key="business.id"
+                class="business grid"
             >
                 <div class="title flex align-center">
                     <img :src="business.logo" :alt="business.name" />
@@ -30,9 +30,9 @@
                 </div>
                 <div class="flex wrap">
                     <div
-                        class="data"
                         v-for="(dataField, idx) in business.dataFields"
                         :key="idx"
+                        class="data"
                     >
                         <p class="field">{{ dataField.field }}</p>
                         <p>{{ dataField.value }}</p>
